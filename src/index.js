@@ -22,6 +22,10 @@ const CookieBanner = (
         window.location.href = `${props.link}`
     }
 
+    let cookie_info;
+    if(typeof props.info != "undefined") {
+        cookie_info = <button className='cookie_info' onClick={openLink}>{props.info}</button>
+    }
 
     if (document.cookie !== 'cookieApproval=true') {
 
@@ -30,12 +34,7 @@ const CookieBanner = (
                 <p className='cookie_text'>{props.text}</p>
                 <div className='cookie_buttons'>
                     <button className='cookie_yes' onClick={setApprovalCookie}>{props.yes}</button>
-                    {
-                        if(typeof props.info != "undefined")
-                        {
-                            <button className='cookie_info' onClick={openLink}>{props.info}</button>
-                        }
-                    }
+                    {cookie_info}
                 </div>
             </div>
         )
