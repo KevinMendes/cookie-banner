@@ -31,7 +31,7 @@ const CookieBanner = (
                 <div className='cookie_buttons'>
                     <button className='cookie_yes' onClick={setApprovalCookie}>{props.yes}</button>
                     {
-                        if (typeof props.info != "undefined")
+                        if(typeof props.info != "undefined")
                         {
                             <button className='cookie_info' onClick={openLink}>{props.info}</button>
                         }
