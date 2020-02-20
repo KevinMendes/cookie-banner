@@ -43,10 +43,10 @@ const CookieBanner = (
 CookieBanner.propTypes = {
     props: PropTypes.objectOf({
         day: PropTypes.number,
-        yes: PropTypes.string.isrequired,
+        yes: PropTypes.string.isRequired,
         info: PropTypes.string,
         link: PropTypes.string,
-        text: PropTypes.string.required,
+        text: PropTypes.string.isRequired,
     }).isRequired
 }
 
