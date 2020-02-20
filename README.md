@@ -10,7 +10,7 @@ Run npm install --save @kevinmendes/cookie-banner
 
         // using ES6 Modules 
 
-        import CookieBanner from 'cookie-banner';
+        import CookieBanner from '@kevinmendes/cookie-banner';
 
         //without react-router 
 
@@ -36,11 +36,11 @@ Run npm install --save @kevinmendes/cookie-banner
 
 ## Props 
 
-day : must be an integer, number of day before cookies approbation expiration.
-yes : Text to the approval button
-info :  Text to the info button
-link : URL that info button have to open
-text : Text use in the banner area
+day : must be an integer, number of day before cookies approbation expiration. // Is not set banner will appear at every new session.
+yes : Text to the approval button // Required
+info :  Text to the info button // Not required, no button if you don't
+link : URL that info button have to open // not required, only use it with info button
+text : Text use in the banner area // Required
 
 
 ## SCSS

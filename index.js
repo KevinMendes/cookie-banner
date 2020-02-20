@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import _ from 'lodash';
+
 
 const CookieBanner = (
     props) => {
@@ -30,7 +30,12 @@ const CookieBanner = (
                 <p className='cookie_text'>{props.text}</p>
                 <div className='cookie_buttons'>
                     <button className='cookie_yes' onClick={setApprovalCookie}>{props.yes}</button>
-                    <button className='cookie_info' onClick={openLink}>{props.info}</button>
+                    {
+                        if (typeof props.info != "undefined")
+                        {
+                            <button className='cookie_info' onClick={openLink}>{props.info}</button>
+                        }
+                    }
                 </div>
             </div>
         )
