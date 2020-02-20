@@ -1,6 +1,7 @@
 {
+  
   "name": "@kevinmendes/cookie-banner",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "A tool to easily create a banner for authorizing cookies in React",
   "main": "lib/index.js",
   "scripts": {
