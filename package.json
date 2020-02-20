@@ -4,12 +4,27 @@
   "description": "A tool to easily create a banner for authorizing cookies in React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "rm -rf ./dist && npm run build",
+    "build": "webpack --config webpack.conf.js",
+    "deploy": "npm run build && gh-pages -d build",
+    "start": "webpack-dev-server"
   },
   "peerDependencies": {
+    "babel-preset-react": "^6.24.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   },
   "repository": {
     "type": "git",
@@ -23,9 +38,6 @@
   "author": "Kevin Mendes <mendes.kevin35@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-react": "^6.24.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "lodash": "^4.17.15"
   }
 }
