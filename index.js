@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cookiebanner.scss";
+import PropTypes from 'prop-types';
 
 const CookieBanner = (
     props) => {
@@ -18,7 +18,7 @@ const CookieBanner = (
         return (null)
     }
     const openLink = () => {
-        window.location.href=`${props.link}`
+        window.location.href = `${props.link}`
     }
 
 
@@ -39,4 +39,15 @@ const CookieBanner = (
     }
 
 }
+
+CookieBanner.propTypes = {
+    props: PropTypes.objectOf({
+        day: PropTypes.number,
+        yes: PropTypes.string.isrequired,
+        info: PropTypes.string,
+        link: PropTypes.string,
+        text: PropTypes.string.required,
+    }).isRequired
+}
+
 export default CookieBanner;
