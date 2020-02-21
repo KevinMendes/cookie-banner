@@ -6,6 +6,10 @@ A tool to easily create a banner for authorizing cookies for React.
 
 Run npm install --save @kevinmendes/cookie-banner
 
+`or`
+
+Run yarn add @kevinmendes/cookie-banner
+
         ```javascript
 
         // using ES6 Modules 
@@ -36,11 +40,11 @@ Run npm install --save @kevinmendes/cookie-banner
 
 ## Props 
 
-day : must be an integer, number of day before cookies approbation expiration. // Is not set banner will appear at every new session.
-yes : Text to the approval button // Required
-info :  Text to the info button // Not required, no button if you don't
-link : URL that info button have to open // not required, only use it with info button
-text : Text use in the banner area // Required
+- day : must be an integer, number of day before cookies approbation expiration. // Is not set banner will appear at every new session.
+- yes : Text to the approval button // Required
+- info :  Text to the info button // Not required, no button if you don't
+- link : URL that info button have to open // not required, only use it with info button
+- text : Text use in the banner area // Required
 
 
 ## SCSS
@@ -167,14 +171,14 @@ exemple :
     }
 .cookie_buttons > .cookie_info {
     border-radius:12px 0 12px 0;
-            background: #478bf9;
-            border:none;
-            color:#fff;
-            font:bold 12px Verdana;
-            padding:6px 0 6px 0;
-            min-height: 2rem;
-            min-width: 7rem;
-            margin: 1rem;
+    background: #478bf9;
+    border:none;
+    color:#fff;
+    font:bold 12px Verdana;
+    padding:6px 0 6px 0;
+    min-height: 2rem;
+    min-width: 7rem;
+    margin: 1rem;
     } 
 
 ```
