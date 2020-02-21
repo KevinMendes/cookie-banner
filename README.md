@@ -40,12 +40,13 @@ Run yarn add @kevinmendes/cookie-banner
 
 ## Props 
 
-- day : must be an integer, number of day before cookies approbation expiration. // Is not set banner will appear at every new session.
+- day : must be an integer, number of day before cookies approbation expiration. // If not set banner will appear at every new session.
 - yes : Text to the approval button // Required
 - info :  Text to the info button // Not required, no button if you don't
 - link : URL that info button have to open // not required, only use it with info button
 - text : Text use in the banner area // Required
 
+# Style : SCSS & CSS
 
 ## SCSS
 
