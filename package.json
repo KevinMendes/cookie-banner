@@ -1,7 +1,7 @@
 {
   
   "name": "@kevinmendes/cookie-banner",
-  "version": "1.1.8",
+  "version": "1.1.9",
   "description": "A tool to easily create a banner for authorizing cookies in React",
   "main": "lib/index.js",
   "scripts": {
@@ -28,9 +28,11 @@
     "url": "github.com/KevinMendes/cookie-banner"
   },
   "keywords": [
+    "react",
     "cookie",
     "banner",
-    "RGPD"
+    "RGPD",
+    "GDPR"
   ],
   "author": "Kevin Mendes <mendes.kevin35@gmail.com>",
   "license": "ISC"
